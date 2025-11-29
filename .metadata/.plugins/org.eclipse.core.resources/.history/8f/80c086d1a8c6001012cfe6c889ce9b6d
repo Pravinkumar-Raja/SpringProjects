@@ -1,0 +1,33 @@
+package com.example;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.example.bean.EmpBean;
+import com.example.service.EmpService;
+
+@SpringBootApplication
+public class SpringMaven {
+	public static void main(String[] args) {
+//		SpringApplication.run(SpringMaven.class, args);
+//		System.out.println("Welcome");
+		
+		ConfigurableApplicationContext ctx=SpringApplication.run(SpringMaven.class, args);
+//		Bean b=ctx.getBean(Bean.class);
+		EmpBean b=(EmpBean) ctx.getBean(EmpBean.class);
+		EmpService es=ctx.getBean(EmpService.class);
+		b.setEid(1);
+		b.setName("PK");
+		b.setEsal(30000);
+		System.out.println(b.getEid()+" "+b.getName()+" "+b.getEsal());
+		System.out.println(es.addEmployee(b)+"Recoed Added Successfully");
+		EmpBean b1=ctx.getBean(EmpBean.class);
+		b1.setEid(2);
+		b1.setName("PA");
+		b1.setEsal(35000);
+		System.out.println(b1.getEid()+" "+b1.getName()+" "+b1.getEsal());
+		System.out.println(es.addEmployee(b1)+"Recoed Added Successfully");
+	}
+
+}

@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<style>
+		       body {
+		           background-color: #3498db; /* modern blue */
+		           font-family: Arial, sans-serif;
+		           color: #fff;
+		           margin: 0;
+		           padding: 0;
+		       }
+
+		       .form-container {
+		           background: rgba(255, 255, 255, 0.1);
+		           padding: 30px;
+		           margin: 50px auto;
+		           width: 400px;
+		           border-radius: 10px;
+		           box-shadow: 0 0 15px rgba(0,0,0,0.3);
+		       }
+
+		       .form-container h2 {
+		           text-align: center;
+		           margin-bottom: 20px;
+		           color: #f1f1f1;
+		       }
+
+		       label {
+		           display: block;
+		           margin-bottom: 5px;
+		           font-weight: bold;
+		       }
+
+		       input {
+		           width: 100%;
+		           padding: 8px;
+		           margin-bottom: 15px;
+		           border: none;
+		           border-radius: 5px;
+		       }
+
+		       button {
+		           width: 100%;
+		           padding: 10px;
+		           background-color: #2ecc71;
+		           border: none;
+		           border-radius: 5px;
+		           color: white;
+		           font-size: 16px;
+		           cursor: pointer;
+		       }
+
+		       button:hover {
+		           background-color: #27ae60;
+		       }
+		   </style>
+</head>
+	<body bgcolor="blue">
+		<form action="./addDoctor" method="post">
+			Enter DoctorID: <input type="text" name="doctorID"/><br><br>
+			Enter DoctorName: <input type="text" name="doctorName"/><br><br>
+			Enter DOB: <input type="date" name="dateOfBirth"/><br><br>
+			Enter DateOfJoining: <input type="date" name="dateOfJoining"/><br><br>
+			Enter Gender: <input type="text" name="gender"/><br><br>
+			Enter Qualification: <input type="text" name="qualification"/><br><br>
+			Enter Specialization: <input type="text" name="specialization"/><br><br>
+			Enter Experience: <input type="number" name="experience"/><br><br>
+			Enter Street: <input type="text" name="street"/><br><br>
+			Enter Location: <input type="text" name="location"/><br><br>
+			Enter City: <input type="text" name="city"/><br><br>
+			Enter State: <input type="text" name="state"/><br><br>
+			Enter PinCode: <input type="number" name="pincode"/><br><br>
+			Enter Contact: <input type="text" name="contact"/><br><br>
+			Enter Email: <input type="email" name="email"/><br><br>
+			<button type="submit">Add Doctor</button>
+		</form>
+	</body>
+</html>
+

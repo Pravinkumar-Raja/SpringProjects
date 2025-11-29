@@ -1,0 +1,8 @@
+<html>
+	<body color="orange">
+		<form action="./deleteEmp" method="post">
+			Enter Employee Id: <input type="text" name="eid"/><br><br>
+			<button type="submit">Delete Employee</button>
+		</form>
+	</body>
+</html>

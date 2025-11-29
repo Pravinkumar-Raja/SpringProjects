@@ -1,0 +1,11 @@
+<html>
+	<body>
+		<form>
+			<label text="Enter username:" />
+				 <input type="text" name="user" /><br>
+			<label text="Enter password:" /> <input type="password" name="pass" /><br>
+			<button type="submit">Login</button>
+		</form>
+	</body>
+</html>
+			

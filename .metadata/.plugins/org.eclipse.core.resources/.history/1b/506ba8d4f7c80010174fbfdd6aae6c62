@@ -1,0 +1,11 @@
+<html>
+	<body bgcolor="red">
+		<form color="yellow">
+			
+			Enter username: <input type="text" name="user" /><br><br>
+			Enter password: <input type="password" name="pass" /><br>
+			<button type="submit">Login</button>
+		</form>
+	</body>
+</html>
+			

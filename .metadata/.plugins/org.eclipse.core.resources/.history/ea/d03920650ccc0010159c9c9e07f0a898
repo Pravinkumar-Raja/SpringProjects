@@ -1,0 +1,27 @@
+package com.example.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.bean.StudentBean;
+import com.example.demo.dao.AdminDao;
+
+@Service
+public class AdminService {
+
+	@Autowired
+	private AdminDao ado;
+	public int addStudent(StudentBean sb)
+	{
+		if(sb!=null)
+		{
+		ado.save(sb);
+		return 1;
+		}
+		else
+		{
+			return 0;
+		}
+		
+	}
+}

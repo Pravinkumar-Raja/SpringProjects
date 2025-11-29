@@ -1,0 +1,54 @@
+package com.example.demo.bean;
+
+public class DoctorBean {
+
+	private int doctorID;
+	private String doctorName;
+	private int experience;
+	private String specialization;
+	private int contact;
+	private String email;
+	public int getDoctorID() {
+		return doctorID;
+	}
+	public void setDoctorID(int doctorID) {
+		this.doctorID = doctorID;
+	}
+	public String getDoctorName() {
+		return doctorName;
+	}
+	public void setDoctorName(String doctorName) {
+		this.doctorName = doctorName;
+	}
+	public int getExperience() {
+		return experience;
+	}
+	public void setExperience(int experience) {
+		this.experience = experience;
+	}
+	public String getSpecialization() {
+		return specialization;
+	}
+	public void setSpecialization(String specialization) {
+		this.specialization = specialization;
+	}
+	public int getContact() {
+		return contact;
+	}
+	public void setContact(int contact) {
+		this.contact = contact;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	@Override
+	public String toString() {
+		return "DoctorBean [doctorID=" + doctorID + ", doctorName=" + doctorName + ", experience=" + experience
+				+ ", specialization=" + specialization + ", contact=" + contact + ", email=" + email + "]";
+	}
+	
+	
+}

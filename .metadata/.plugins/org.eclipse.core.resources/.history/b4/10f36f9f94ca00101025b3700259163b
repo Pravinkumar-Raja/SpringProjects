@@ -1,0 +1,18 @@
+package com.example.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.bean.EmployeeBean;
+import com.example.demo.dao.EmpDao;
+
+@Service
+public class EmpService {
+	@Autowired
+	private EmpDao edao;
+	public int addEmp(EmployeeBean eb)
+	{
+		return edao.addEmp(eb);
+	}
+
+}

@@ -1,0 +1,53 @@
+package com.example.demo.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.example.demo.bean.EmployeeBean;
+
+
+
+@Repository
+public class EmpDao {
+	@Autowired
+	private SessionFactory sessionFactory;
+	Session s=null;
+	public int addEmp(EmployeeBean eb)
+	{
+		 s=sessionFactory.openSession();
+		Transaction t=s.beginTransaction();
+		if(eb!=null)
+		{
+			t.commit();
+			s.persist(eb);
+			System.out.println("Session added/stored Successfully");
+			return 1;
+		}
+		else
+		{
+			return 0;
+		}
+	}
+	
+	public int updateEmp(EmployeeBean eb)
+	{
+		s=sessionFactory.openSession();
+		Transaction t=s.beginTransaction();
+		if(eb!=null)
+		{
+//			s.persist(String.valueOf(eb.getEid()),eb);
+			s.merge(eb);
+			t.commit();
+			System.out.println("Session updated Successfully");
+			return 1;
+		}
+		else
+		{
+			return 0;
+		}
+	}
+
+}

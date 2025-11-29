@@ -1,0 +1,6 @@
+package com.example;
+
+@SpringBootApplication
+public class SpringMaven {
+
+}

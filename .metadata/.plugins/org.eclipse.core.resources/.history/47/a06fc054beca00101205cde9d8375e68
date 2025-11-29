@@ -1,0 +1,39 @@
+package com.example.demo.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.example.demo.bean.EmployeeBean;
+import com.example.demo.dao.EmpDao;
+
+@Service
+public class EmpService {
+	@Autowired
+	private EmpDao edao;
+	@Transactional
+	public int addEmp(EmployeeBean eb)
+	{
+		return edao.addEmp(eb);
+	}
+	
+	@Transactional
+	public int updateEmp(EmployeeBean eb)
+	{
+		return edao.updateEmp(eb);
+	}
+	
+	@Transactional
+	public int deleteEmp(int id)
+	{
+		return edao.deleteEmp(id);
+	}
+	
+	@Transactional
+	public List<EmployeeBean> selectAllEmp()
+	{
+		return edao.selectAllEmp();
+	}
+}

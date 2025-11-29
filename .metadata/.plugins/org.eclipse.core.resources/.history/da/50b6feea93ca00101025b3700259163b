@@ -1,0 +1,21 @@
+package com.example.demo.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.example.demo.bean.EmployeeBean;
+
+@Repository
+public class EmpDao {
+	@Autowired
+	private SessionFactory sessionFactory;
+	
+	public int addEmp(EmployeeBean eb)
+	{
+		Session s=sessionFactory.openSession();
+		
+	}
+
+}

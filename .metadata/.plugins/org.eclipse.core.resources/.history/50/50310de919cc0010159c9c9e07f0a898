@@ -1,0 +1,40 @@
+package com.example.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.bean.StudentBean;
+import com.example.demo.service.AdminService;
+
+@RestController
+@RequestMapping("/admin")
+public class AdminController {
+	
+	@Autowired
+	private AdminService adserv;
+	@PostMapping("/addStudent")
+	public String meth1(@RequestBody StudentBean sb)
+	{
+		return "<h1>"+adserv.addStudent(sb)+" record added successfully ... </h1>";
+	}
+	
+	@PutMapping("/updateStudent")
+	public String meth2(@RequestBody StudentBean sb)
+	{
+		return  "<h1>"+adserv.updateStudent(sb)+" record updated successfully ... </h1>";
+	}
+	
+	@DeleteMapping("/deleteStudent{rollno}")
+	public String meth3(@PathVariable("rollno")int rolno)
+	{
+		return "<h1>"+adserv.deleteStudent(rolno)+" record deleted successfully....</h1>";
+		
+	}
+
+}

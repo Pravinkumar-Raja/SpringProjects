@@ -1,0 +1,4 @@
+<html>
+	<body bgcolor="LightBlue">
+		<form>
+			Enter PatientID: <input type="text" 

@@ -1,0 +1,12 @@
+<html>
+	<body bgcolor="yellow">
+		<form action="/admin./validate1" method="post">
+
+			Enter username: <input type="text" name="usr" /><br><br>
+
+			Enter password: <input type="password" name="pas" /><br><br>
+
+			<button type="submit">Login</button>
+		</form>
+	</body>
+</html>

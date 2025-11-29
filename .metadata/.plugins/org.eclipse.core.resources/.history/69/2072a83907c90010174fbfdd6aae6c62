@@ -1,0 +1,12 @@
+<html>
+	<body bgcolor="blue">
+		<form>
+			Enter DoctorID: <input type="number" name="doctorID"/><br><br>
+			Enter DoctorName: <input type="text" name="doctorName"/><br><br>
+			Enter Experience: <input type="number" name="experience"/><br><br>
+			Enter Specialization: <input type="text" name="specialization"/><br><br>
+			Enter Contact: <input type="number" name="contact"/><br><br>
+			<button type="submit">Add Doctor</button>
+		</form>
+	</body>
+</html>

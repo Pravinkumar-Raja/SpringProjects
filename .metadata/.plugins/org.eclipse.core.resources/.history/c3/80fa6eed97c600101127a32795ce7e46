@@ -1,0 +1,21 @@
+package com.example;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class SpringMaven {
+	public static void main(String[] args) {
+//		SpringApplication.run(SpringMaven.class, args);
+//		System.out.println("Welcome");
+		
+		ConfigurableApplicationContext ctx=SpringApplication.run(SpringMaven.class, args);
+		Bean b=ctx.getBean(Bean.class);
+		b.setEid(1);
+		b.setName("PK");
+		b.setEsal(30000);
+		System.out.println(b.getEid()+" "+b.getName()+" "+b.getEsal());
+	}
+
+}

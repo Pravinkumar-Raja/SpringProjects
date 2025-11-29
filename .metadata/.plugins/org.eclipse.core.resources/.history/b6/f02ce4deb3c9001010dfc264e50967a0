@@ -1,0 +1,13 @@
+<html>
+	<body bgcolor=green">
+		<form action="./validate" method="post">
+
+			<lable>Enter username: </label><input type="text" name="user" /><br><br>
+
+			Enter password: <input type="password" name="pass" /><br><br>
+
+			<button type="submit">Login</button>
+		</form>
+	</body>
+</html>
+			

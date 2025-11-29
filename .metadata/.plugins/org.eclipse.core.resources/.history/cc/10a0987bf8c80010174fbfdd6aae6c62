@@ -1,0 +1,13 @@
+<html>
+	<body bgcolor="red">
+		<form>
+			<hr>
+			<lable bgcolor="yellow">Enter username: </label><input type="text" name="user" /><br><br>
+			<hr>
+			Enter password: <input type="password" name="pass" /><br><br>
+			<hr>
+			<button type="submit">Login</button>
+		</form>
+	</body>
+</html>
+			

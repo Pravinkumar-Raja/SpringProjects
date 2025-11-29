@@ -1,0 +1,31 @@
+package com.example;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Bean {
+	private int eid;
+	private String name;
+	private int esal;
+	public int getEid() {
+		return eid;
+	}
+	public void setEid(int eid) {
+		this.eid = eid;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getEsal() {
+		return esal;
+	}
+	public void setEsal(int esal) {
+		this.esal = esal;
+	}
+	
+	
+
+}
