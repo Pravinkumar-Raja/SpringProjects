@@ -12,10 +12,10 @@ public class UserController {
     
     @Autowired
     private MessageService ms;
-    @Autowired
-    public UserController(MessageService messageService) {
-        this.ms = messageService;
-    }
+//    @Autowired
+//    public UserController(MessageService messageService) {
+//        this.ms = messageService;
+//    }
     @GetMapping("/msg")
     public String meth() {
         return "Message: "+ms.getMessage();  // This should render the message, if you return a String.

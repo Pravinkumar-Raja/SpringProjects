@@ -15,6 +15,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Administrator\Documents\workspace-spring-tools-for-eclipse-4.32.0.RELEASE\springTasks\src\main\java\com\example\demo\dao\EmployeeDao.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -56,12 +57,15 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.console"/>
 			<item value="com.ust"/>
 		</list>
 		<list key="name">
+			<item value="Hibernate-Project"/>
 			<item value="MavenSpring"/>
 		</list>
 		<list key="artifactId">
+			<item value="hibernate"/>
 			<item value="srping-demo"/>
 		</list>
 		<list key="projectNameTemplate">

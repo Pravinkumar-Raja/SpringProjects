@@ -2,3 +2,7 @@
 bin/
 .settings/
 .*class
+.metadata/
+bin/
+.settings/
+.*class

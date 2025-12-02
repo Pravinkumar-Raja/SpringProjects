@@ -9,6 +9,11 @@ public class EmployeeDao {
 	@Autowired
 	private SessionFactory sessionFactory;
 	
+	public int addStudent()
+	{
+		return 0;
+	}
+	
 	
 
 }
